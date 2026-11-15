@@ -8,14 +8,18 @@ int main(void)
 
     scanf("%d", &n);
 
-    if (n < 0) {
+    if (n < 0)
+    {
         printf("NG\n");
-    } else {
-        for (int i = 1; i <= n; i++) {
-            sum += i;
-        }
-        printf("%lld\n", sum);
+        return 0;
     }
+
+    for (int i = 1; i <= n; i++)
+    {
+        sum += i;
+    }
+
+    printf("%lld\n", sum);
 
     return 0;
 }
